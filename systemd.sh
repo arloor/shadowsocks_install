@@ -7,6 +7,7 @@
 #删除init.d的服务
 service shadowsocks stop  # 停止服务
 chkconfig --del shadowsocks  # 删除服务
+rm -f /etc/init.d/shadowsocks
 
 #创建service
 cat > /lib/systemd/system/ss.service <<EOF
