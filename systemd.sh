@@ -28,6 +28,8 @@ WantedBy=multi-user.target
 EOF
 
 systemctl enable ss
+systemctl daemon-reload
 systemctl start ss
+
 
 echo "现在使用systemd管理shadowsocks服务"
